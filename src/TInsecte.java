@@ -20,6 +20,6 @@ public class TInsecte extends Pokemon{
     }
 
     public String toString() {
-        return super.toString() + "ma vitesse au sol est de " + vitesseSol() + "km/h, en vol est de " + vitesseAir()+", " + this.nbrPattes + "pattes, ma taille est de " + this.taille + "d";
+        return super.toString() + "ma vitesse au sol est de " + vitesseSol() + "km/h, en vol est de " + vitesseAir()+", " + this.nbrPattes + "pattes, ma taille est de " + this.taille + "m, mon activité est de butiner, ma fréquence cardiaque est de 120 pulsations à la minute";
     }
 }
