@@ -22,7 +22,8 @@ public class TFeu extends Pokemon{
     public void attaqueFeu(Pokemon cible) {
         double degats = 15 * vitesseSol();
         System.out.println((cible.GetEnergie() - degats));
-        cible.SetEnergie((cible.GetEnergie() - degats));
-        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie");
+        double energieapres=(cible.GetEnergie() - degats);
+        cible.SetEnergie(energieapres);
+        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie son solde est desormais de "+ cible.GetEnergie());
     }
 }

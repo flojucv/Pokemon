@@ -27,8 +27,7 @@ public class Main {
         System.out.println("────────────────────────────────");
         System.out.println("fantominus energie :");
         System.out.println(fantominus.GetEnergie());
-        System.out.println("Salameche attaque fantominus :");
-        salamech.attaqueFeu(fanto);
+        salamech.attaqueFeu(fantominus);
         System.out.println("fantominus energie :");
         System.out.println(fantominus.GetEnergie());
         System.out.println("────────────────────────────────");

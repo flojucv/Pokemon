@@ -21,6 +21,6 @@ public class TAddict extends Pokemon {
     public void attaqueAddict(Pokemon cible) {
         double degats = 2*vitesseSol();
         cible.SetEnergie((cible.GetEnergie() - degats));
-        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie");
+        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie son solde est desormais de "+ cible.GetEnergie());
     }
 }

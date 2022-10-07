@@ -26,6 +26,6 @@ public class TInsecte extends Pokemon{
     public void attaqueInsecte(Pokemon cible) {
         double degats = vitesseAir()*3;
         cible.SetEnergie((cible.GetEnergie() - degats));
-        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie");
+        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie son solde est desormais de "+ cible.GetEnergie());
     }
 }
