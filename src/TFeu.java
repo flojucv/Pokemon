@@ -11,11 +11,18 @@ public class TFeu extends Pokemon{
         this.taille = prmTaille;
     }
 
-    public double VitesseSol() {
+    public double vitesseSol() {
         return (this.nbrPatte * this.taille);
     }
 
     public String toString() {
         return super.toString();
+    }
+
+    public void attaqueFeu(Pokemon cible) {
+        double degats = 15 * vitesseSol();
+        System.out.println((cible.GetEnergie() - degats));
+        cible.SetEnergie((cible.GetEnergie() - degats));
+        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie");
     }
 }

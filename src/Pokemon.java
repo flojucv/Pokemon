@@ -25,4 +25,7 @@ public class Pokemon {
     protected double GetPoids() {
         return this.poids;
     }
+
+    /*-----SETTEUR-----*/
+    protected void SetEnergie(double prmEnergie) {this.energie = prmEnergie;}
 }

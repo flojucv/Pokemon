@@ -13,4 +13,10 @@ public class TMer extends Pokemon {
     public String toString() {
         return (super.toString() + ", ma vitesse est de " + VitesseEau() + "km/h j'ai " + this.nbrNagoir + " nageoires");
     }
+
+    public void attaqueInsecte(Pokemon cible) {
+        double degats = 10 * this.nbrNagoir;
+        cible.SetEnergie((cible.GetEnergie() - degats));
+        System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie");
+    }
 }

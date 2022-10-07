@@ -1,19 +1,37 @@
 public class Main {
     public static void main(String[] args) {
-        Pokemon pokemonDefault = new Pokemon("Quentin", 5, 18);
+        Pokemon sala = new Pokemon("salamech", 30, 18);
+        TFeu salamech = new TFeu(sala, 4, 8, 40, 1.30);
 
-        TInsecte pokemonInsect = new TInsecte(pokemonDefault, 5, 8, 7);
+        Pokemon insec = new Pokemon("insecateur", 25, 51);
+        TInsecte insecateur = new TInsecte(insec, 2, 2, 2);
 
-        TFeu pokemonFeu = new TFeu(pokemonDefault, 5, 8, 3, 19);
+        Pokemon magi = new Pokemon("magicarpe", 1, 10);
+        TMer magicarpe = new TMer(magi, 3);
 
-        TMer pokemonMer = new TMer(pokemonDefault, 7);
+        Pokemon fanto = new Pokemon("fantominus", 15, 1);
+        TAddict fantominus = new TAddict(fanto, 2, 4, 10, 1);
 
-        TAddict pokemonAddict = new TAddict(pokemonDefault, 7, 8, 2, 5);
+        System.out.println("────────────────────────────────");
+        System.out.println("salamech.toString() :");
+        System.out.println(salamech.toString());
+        System.out.println("────────────────────────────────");
+        System.out.println("insecateur.toString() :");
+        System.out.println(insecateur.toString());
+        System.out.println("────────────────────────────────");
+        System.out.println("magicarpe.toString() :");
+        System.out.println(magicarpe.toString());
+        System.out.println("────────────────────────────────");
+        System.out.println("fantominus.toString() :");
+        System.out.println(fantominus.toString());
+        System.out.println("────────────────────────────────");
+        System.out.println("fantominus energie :");
+        System.out.println(fantominus.GetEnergie());
+        System.out.println("Salameche attaque fantominus :");
+        salamech.attaqueFeu(fanto);
+        System.out.println("fantominus energie :");
+        System.out.println(fantominus.GetEnergie());
+        System.out.println("────────────────────────────────");
 
-        System.out.println(pokemonDefault.toString());
-        System.out.println(pokemonAddict.toString());
-        System.out.println(pokemonFeu.toString());
-        System.out.println(pokemonMer.toString());
-        System.out.println(pokemonInsect.toString());
     }
 }
