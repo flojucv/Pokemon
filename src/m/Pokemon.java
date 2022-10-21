@@ -1,3 +1,4 @@
+package m;
 public class Pokemon {
     private String nom;
     private double energie;

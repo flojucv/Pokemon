@@ -1,3 +1,4 @@
+package m;
 public class Main {
     public static void main(String[] args) {
         Pokemon sala = new Pokemon("salamech", 30, 18);
@@ -25,11 +26,9 @@ public class Main {
         System.out.println("fantominus.toString() :");
         System.out.println(fantominus.toString());
         System.out.println("────────────────────────────────");
-        System.out.println("fantominus energie :");
-        System.out.println(fantominus.GetEnergie());
+        System.out.println("fantominus energie :" + fantominus.GetEnergie());
         salamech.attaqueFeu(fantominus);
-        System.out.println("fantominus energie :");
-        System.out.println(fantominus.GetEnergie());
+        System.out.println("fantominus energie :" + fantominus.GetEnergie());
         System.out.println("────────────────────────────────");
 
     }

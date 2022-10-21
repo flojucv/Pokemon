@@ -1,3 +1,4 @@
+package m;
 public class TAddict extends Pokemon {
     private int nbrPatte, lvlJeu, nbrHeure;
     private double taille;

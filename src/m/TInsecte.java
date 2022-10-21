@@ -1,3 +1,4 @@
+package m;
 public class TInsecte extends Pokemon{
     private int nbrPattes;
     private int nbrAile;

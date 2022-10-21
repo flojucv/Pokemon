@@ -1,3 +1,4 @@
+package m;
 public class TFeu extends Pokemon{
     private int nbrPatte, nbrBFeu, puissance;
     private double taille;
@@ -21,7 +22,6 @@ public class TFeu extends Pokemon{
 
     public void attaqueFeu(Pokemon cible) {
         double degats = 15 * vitesseSol();
-        System.out.println((cible.GetEnergie() - degats));
         double energieapres=(cible.GetEnergie() - degats);
         cible.SetEnergie(energieapres);
         System.out.println(cible.GetNom() + "a perdue " + degats + " d'energie son solde est desormais de "+ cible.GetEnergie());

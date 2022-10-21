@@ -1,3 +1,4 @@
+package m;
 public class TMer extends Pokemon {
     private int nbrNagoir;
 
